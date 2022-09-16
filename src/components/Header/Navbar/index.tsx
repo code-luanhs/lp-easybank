@@ -1,4 +1,4 @@
-import { NavbarItem } from '../NavbarItem';
+import { NavbarItem } from './NavbarItem';
 import { Nav } from './styles';
 
 export function Navbar() {

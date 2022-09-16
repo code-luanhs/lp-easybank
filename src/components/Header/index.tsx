@@ -2,7 +2,7 @@ import {
   Container
 } from './styles';
 
-import { Navbar } from '../Navbar';
+import { Navbar } from './Navbar';
 import { Button } from '../Button';
 
 import logo from '../../assets/logo.svg';

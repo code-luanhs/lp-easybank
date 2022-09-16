@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { THEME } from '../../util/theme';
+import { THEME } from '../../../../util/theme';
 
 export const NavItem = styled.li`
   position: relative;
