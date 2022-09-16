@@ -1,4 +1,7 @@
-import { NavItem } from './styles';
+import {
+  NavItem,
+  Link
+} from './styles';
 
 interface Props {
   name: string;
@@ -8,9 +11,9 @@ interface Props {
 export function NavbarItem(props: Props) {
   return (
     <NavItem>
-      <a href={props.link}>
+      <Link href={props.link}>
         {props.name}
-      </a>
+      </Link>
     </NavItem>
   )
 }

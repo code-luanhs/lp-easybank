@@ -1,0 +1,22 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Public Sans',sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
