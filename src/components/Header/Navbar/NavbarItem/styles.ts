@@ -13,7 +13,7 @@ export const NavItem = styled.li`
     content: '';
     display: block;
     position: absolute;
-    top: calc(100% + 18px);
+    top: calc(100% + 21px);
     left: 50%;
     transform: translateX(-50%);
     width: 0;

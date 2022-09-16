@@ -1,4 +1,5 @@
 import {
+  Heading,
   Container
 } from './styles';
 
@@ -9,7 +10,7 @@ import logo from '../../assets/logo.svg';
 
 export function Header() {
   return (
-    <header>
+    <Heading>
       <Container>
         <img src={logo} alt="Logo" />
 
@@ -17,7 +18,7 @@ export function Header() {
 
         <Button text="Request Invite" link="#" />
       </Container>
-    </header>
+    </Heading>
   )
 }
 

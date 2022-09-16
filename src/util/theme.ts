@@ -17,6 +17,8 @@ export const THEME = {
     FONTS: {
         SIZE: {
             BODY: '1.125rem',
+            XXLARGE: '3rem',
+            LARGE: '1rem',
             DEFAULT: '0.875rem'
         },
         WEIGHT: {
