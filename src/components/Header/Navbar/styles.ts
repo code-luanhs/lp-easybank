@@ -5,4 +5,8 @@ export const Nav = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 30px;
+
+  @media (max-width: 770px) {
+    display: none;
+  }
 `;

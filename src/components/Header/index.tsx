@@ -1,12 +1,14 @@
 import {
   Heading,
-  Container
+  Container,
+  Button,
+  ButtonNav
 } from './styles';
 
 import { Navbar } from './Navbar';
-import { Button } from '../Button';
 
 import logo from '../../assets/logo.svg';
+import iconMenu from '../../assets/icon-hamburger.svg';
 
 export function Header() {
   return (
@@ -14,9 +16,13 @@ export function Header() {
       <Container>
         <img src={logo} alt="Logo" />
 
+        <ButtonNav>
+          <img src={iconMenu} alt="Menu" loading="lazy" />
+        </ButtonNav>
+
         <Navbar />
 
-        <Button text="Request Invite" link="#" />
+        <Button href="">Request Invite</Button>
       </Container>
     </Heading>
   )

@@ -8,21 +8,40 @@ export const Section = styled.section`
   background:
     url(${backgroundImage})
     no-repeat
-    calc(100% + 230px) calc(100% - 30px)
+    100% 0
     ${THEME.COLORS.VERY_LIGHT};
   position: relative;
   overflow: hidden;
+  background-position: 51rem -15rem;
+  background-size: 1175px;
+
+  @media (max-width: 1440px) {
+    background-position: 36rem -15rem;
+  }
+
+  @media (max-width: 770px) {
+    background-position: 35% -35rem;
+  }
 `;
 
 export const Container = styled.div`
   max-width: 1140px;
   margin: 0 auto;
   padding: 150px 0 375px;
+
+  @media (max-width: 770px) {
+    text-align: center;
+    padding: 25rem 25px 80px;
+  }
 `;
 
 export const Content = styled.div`
   max-width: 400px;
   margin-right: auto;
+
+  @media (max-width: 770px) {
+    margin: 0 auto;
+  }
 `;
 
 export const Title = styled.h1`
@@ -43,4 +62,12 @@ export const Image = styled.img`
   top: -120px;
   right: -130px;
   z-index: 5;
+
+  @media (max-width: 770px) {
+    top: -150px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    max-width: 425px;
+  }
 `;

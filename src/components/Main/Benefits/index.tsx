@@ -1,6 +1,8 @@
 import {
   Section,
   Container,
+  Title,
+  Content,
   ListBenefits
 } from './styles';
 
@@ -16,11 +18,11 @@ export function Benefits() {
     <Section>
       <Container>
         <header>
-          <h2>Why choose Easybank?</h2>
-          <p>
+          <Title>Why choose Easybank?</Title>
+          <Content>
             We leverage Open Banking to turn your bank account into your financial hub.<br />
             Control your finances like never before.
-          </p>
+          </Content>
         </header>
 
         <ListBenefits>

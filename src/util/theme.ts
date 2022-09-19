@@ -18,6 +18,7 @@ export const THEME = {
         SIZE: {
             BODY: '1.125rem',
             XXLARGE: '3rem',
+            XLARGE: '2.25rem',
             LARGE: '1rem',
             DEFAULT: '0.875rem'
         },
