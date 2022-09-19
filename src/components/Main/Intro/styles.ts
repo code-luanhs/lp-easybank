@@ -42,4 +42,5 @@ export const Image = styled.img`
   position: absolute;
   top: -120px;
   right: -130px;
+  z-index: 5;
 `;
