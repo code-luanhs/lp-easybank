@@ -19,6 +19,8 @@ height:140px;
 export const Copyright = styled.span`
   font-size: ${THEME.FONTS.SIZE.DEFAULT};
   color:  ${THEME.COLORS.GRAYISH_BLUE};
+  font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
+  
 
 `;
 
@@ -60,7 +62,8 @@ margin-top:30px;
 export const Contats = styled.span`
 color:${THEME.COLORS.LIGHT_GRAYISH_BLUE};
 cursor:pointer;
-font-size: ${THEME.FONTS.SIZE.BODY};
+font-size: ${THEME.FONTS.SIZE.LARGE};
+font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
 :hover {
     color:${THEME.COLORS.LIME_GREEN};
     transition: ${THEME.TRANSITION.DEFAULT};

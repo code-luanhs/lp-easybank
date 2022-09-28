@@ -12,21 +12,24 @@ width: 100%;
 height:280px;
 border-top-left-radius: 6px;
 border-top-right-radius: 6px;
-/* object-fit:cover; */
 `;
 export const Swapper = styled.div`
 padding:10px;
 `;
 export const By = styled.span`
 font-size:14px;
-color:#070707;
+color:${THEME.COLORS.GRAYISH_BLUE};
+font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
 `;
 export const Title = styled.h1`
 font-size:22px;
+color:${THEME.COLORS.DARK_BLUE};
+font-weight: ${THEME.FONTS.WEIGHT.REGULAR};
 
 `;
 export const Context = styled.span`
 font-size:16px;
 margin-top:10px;
-color:#000;
+color:${THEME.COLORS.GRAYISH_BLUE};
+font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
 `;

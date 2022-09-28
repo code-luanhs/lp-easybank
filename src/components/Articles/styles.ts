@@ -3,6 +3,7 @@ import { THEME } from '../../util/theme';
 
 export const Title = styled.h1`
   margin-left:55px;
+  font-weight: ${THEME.FONTS.WEIGHT.REGULAR};
 `;
 export const Container = styled.div`
  background: ${THEME.COLORS.VERY_LIGHT};
