@@ -20,7 +20,7 @@ export const Copyright = styled.span`
   font-size: ${THEME.FONTS.SIZE.DEFAULT};
   color:  ${THEME.COLORS.GRAYISH_BLUE};
   font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
-  
+
 
 `;
 
@@ -34,15 +34,14 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-padding:30px 30px  0px 50px;
+padding:30px 0px  0px 70px;
 `;
 
 export const SocialContats = styled.div`
 display:grid;
 grid-template-columns:1fr 1fr;
 grid-template-rows:1fr 1fr 1fr;
-padding:30px 30px  0px 50px;
-
+padding:30px 0px  0px 0px;
 `;
 export const DivIcons = styled.div`
 display:flex;
@@ -64,6 +63,7 @@ color:${THEME.COLORS.LIGHT_GRAYISH_BLUE};
 cursor:pointer;
 font-size: ${THEME.FONTS.SIZE.LARGE};
 font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
+padding: 0px 50px 0px 50px;
 :hover {
     color:${THEME.COLORS.LIME_GREEN};
     transition: ${THEME.TRANSITION.DEFAULT};
@@ -71,7 +71,7 @@ font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
 `;
 
 export const SocialButton = styled.div`
-padding:30px 50px  0px 50px;
+padding:30px 70px  0px 0px;
 `;
 
 export const Request = styled.a`
