@@ -1,4 +1,5 @@
 import Articles from './components/Articles';
+import Footer from './components/Footer';
 import { Header } from './components/Header';
 import { Main } from './components/Main';
 
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Main />
       <Articles/>
+      <Footer/>
     
     </>
   );
