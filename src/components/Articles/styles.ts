@@ -18,5 +18,9 @@ padding:0px 55px 0px 55px;
 
 `;
 export const TitleDiv = styled.div`
+margin:0;
+  @media (max-width: 770px) {
+    text-align: center;
+  }
 
 `;
