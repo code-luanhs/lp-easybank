@@ -6,6 +6,7 @@ export const Container = styled.div`
 margin-top:40px;
 margin-bottom:40px;
 background: ${THEME.COLORS.WHITE};
+border-radius:6px;
 
 `;
 export const ImageArticle = styled.img`
