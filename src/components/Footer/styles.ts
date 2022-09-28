@@ -62,7 +62,8 @@ color:${THEME.COLORS.LIGHT_GRAYISH_BLUE};
 cursor:pointer;
 font-size: ${THEME.FONTS.SIZE.BODY};
 :hover {
-    opacity: 0.6;
+    color:${THEME.COLORS.LIME_GREEN};
+    transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;
 
@@ -97,7 +98,8 @@ export const Facebook = styled(BsFacebook)`
   margin-top: 6px;
   cursor: pointer;
   :hover {
-    opacity: 0.6;
+    color:${THEME.COLORS.LIME_GREEN};
+    transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;
 export const Instagram = styled(BsInstagram)`
@@ -107,7 +109,8 @@ export const Instagram = styled(BsInstagram)`
   margin-top: 6px;
   cursor: pointer;
   :hover {
-    opacity: 0.6;
+    color:${THEME.COLORS.LIME_GREEN};
+    transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;
 export const Youtube = styled(BsYoutube)`
@@ -117,7 +120,8 @@ export const Youtube = styled(BsYoutube)`
   margin-top: 6px;
   cursor: pointer;
   :hover {
-    opacity: 0.6;
+    color:${THEME.COLORS.LIME_GREEN};
+    transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;
 export const Twitter = styled(BsTwitter)`
@@ -127,7 +131,8 @@ export const Twitter = styled(BsTwitter)`
   margin-top: 6px;
   cursor: pointer;
   :hover {
-    opacity: 0.6;
+    color:${THEME.COLORS.LIME_GREEN};
+    transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;
 export const Pinterest = styled(BsPinterest)`
@@ -137,6 +142,7 @@ export const Pinterest = styled(BsPinterest)`
   margin-top: 6px;
   cursor: pointer;
   :hover {
-    opacity: 0.6;
+    color:${THEME.COLORS.LIME_GREEN};
+    transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;
