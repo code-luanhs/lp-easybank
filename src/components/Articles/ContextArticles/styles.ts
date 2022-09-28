@@ -5,6 +5,7 @@ import { THEME } from "../../../util/theme";
 export const Container = styled.div`
 margin-top:40px;
 margin-bottom:40px;
+background: ${THEME.COLORS.WHITE};
 
 `;
 export const ImageArticle = styled.img`
