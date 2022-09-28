@@ -1,21 +1,21 @@
 import {Container,ImageArticle,Swapper,By,Title,Context} from './styles'
 
 interface ArticleProps{
-    imageurl: string;
+    url: string;
     by: string;
     title: string;
-    context: string;
+    content: string;
 
 }
 
-function ContextArticles({imageurl, by, title, context}:ArticleProps) {
+function ContextArticles({url, by, title, content}:ArticleProps) {
     return ( 
         <Container>
-            <ImageArticle src={imageurl} alt="img"/>
+            <ImageArticle src={url} alt="img"/>
             <Swapper>
                 <By>{by}</By>
                 <Title>{title}</Title>
-                <Context>{context}</Context>
+                <Context>{content}</Context>
             </Swapper>
         </Container>
      );
