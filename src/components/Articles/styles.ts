@@ -14,7 +14,8 @@ export const Swapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2.3rem;
-  padding: 0px 55px 0px 55px;
+  margin-left:50px;
+  margin-right:50px;
 `;
 export const TitleDiv = styled.div`
   margin: 0;
