@@ -73,7 +73,7 @@ export const DivCopy = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 `;
 
 export const Contats = styled.li`
@@ -98,6 +98,9 @@ export const Contats = styled.li`
 
 export const SocialButton = styled.div`
   padding: 30px 70px 0px 0px;
+  align-items:flex-end;
+  display:flex;
+  flex-direction: column;
   @media (max-width: 770px) {
     display: flex;
     flex-direction: column;
