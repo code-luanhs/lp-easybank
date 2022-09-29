@@ -49,7 +49,7 @@ export const SocialIcons = styled.div`
   }
 `;
 
-export const SocialContats = styled.div`
+export const SocialContats = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -76,7 +76,7 @@ export const DivCopy = styled.div`
   margin-top: 30px;
 `;
 
-export const Contats = styled.span`
+export const Contats = styled.li`
   color: ${THEME.COLORS.LIGHT_GRAYISH_BLUE};
   cursor: pointer;
   font-size: ${THEME.FONTS.SIZE.LARGE};
@@ -86,7 +86,7 @@ export const Contats = styled.span`
     color: ${THEME.COLORS.LIME_GREEN};
     transition: ${THEME.TRANSITION.DEFAULT};
   }
-
+  
   @media (max-width: 770px) {
     display: flex;
     flex-direction: column;
@@ -125,7 +125,8 @@ export const Request = styled.a`
   }
 `;
 export const Icons = styled.a``;
-export const ImageEasybank = styled.img``;
+export const ImageEasybank = styled.img`
+`;
 
 export const Facebook = styled(BsFacebook)`
   color: ${THEME.COLORS.WHITE};

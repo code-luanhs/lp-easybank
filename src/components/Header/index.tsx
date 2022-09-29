@@ -1,14 +1,16 @@
 import {
   Heading,
   Container,
-  Button,
+
   ButtonNav
 } from './styles';
+
 
 import { Navbar } from './Navbar';
 
 import logo from '../../assets/logo.svg';
 import iconMenu from '../../assets/icon-hamburger.svg';
+import Button from '../Button';
 
 export function Header() {
   return (
@@ -22,7 +24,11 @@ export function Header() {
 
         <Navbar />
 
-        <Button href="">Request Invite</Button>
+        <Button
+        link='http://localhost:3000/'
+        text='Request Invite'
+        />
+
       </Container>
     </Heading>
   )

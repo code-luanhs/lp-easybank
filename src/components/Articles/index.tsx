@@ -10,7 +10,7 @@ function Articles() {
   return (
     <Container>
       <TitleDiv>
-        <Title>Lastest Article</Title>
+        <Title>Latest Articles</Title>
       </TitleDiv>
       <Swapper>
         <ContextArticles

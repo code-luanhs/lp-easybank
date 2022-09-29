@@ -27,19 +27,19 @@ function Footer() {
         <SocialIcons>
           <ImageEasybank src={logo} alt="aa" />
           <DivIcons>
-            <a href="https://github.com/pablokaliel">
+            <a href="http://localhost:3000/">
               <Facebook />
             </a>
-            <a href="https://github.com/pablokaliel">
+            <a href="http://localhost:3000/">
               <Youtube />
             </a>
-            <a href="https://github.com/pablokaliel">
+            <a href="http://localhost:3000/">
               <Twitter />
             </a>
-            <a href="https://github.com/pablokaliel">
+            <a href="http://localhost:3000/">
               <Pinterest />
             </a>
-            <a href="https://github.com/pablokaliel">
+            <a href="http://localhost:3000/">
               <Instagram />
             </a>
           </DivIcons>
@@ -49,13 +49,13 @@ function Footer() {
           <Contats>Contact</Contats>
           <Contats>Blog</Contats>
           <Contats>Careers</Contats>
-          <Contats>Suport</Contats>
+          <Contats>Support</Contats>
           <Contats>Privacy Policy</Contats>
         </SocialContats>
         <SocialButton>
           <Request>Request Invite</Request>
           <DivCopy>
-            <Copyright>Easybank. All Rights Reserved</Copyright>
+            <Copyright>₢ Easybank. All Rights Reserved</Copyright>
           </DivCopy>
         </SocialButton>
       </SwapperFooter>
