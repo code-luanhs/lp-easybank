@@ -1,13 +1,12 @@
-import {Container, Title, Swapper,TitleDiv} from './styles'
-
+import { Container, Title, Swapper, TitleDiv } from "./styles";
 
 import ContextArticles from "./ContextArticles";
 
 function Articles() {
-    return ( 
-     <Container>
+  return (
+    <Container>
       <TitleDiv>
-      <Title>Lastest Article</Title>
+        <Title>Lastest Article</Title>
       </TitleDiv>
       <Swapper>
         <ContextArticles
@@ -36,7 +35,7 @@ function Articles() {
         />
       </Swapper>
     </Container>
-     );
+  );
 }
 
 export default Articles;
