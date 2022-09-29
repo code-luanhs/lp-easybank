@@ -1,9 +1,13 @@
 import { NavbarItem } from './NavbarItem';
 import { Nav } from './styles';
 
-export function Navbar() {
+interface Props {
+  class: string;
+}
+
+export function Navbar(props: Props) {
   return (
-    <Nav>
+    <Nav className={props.class}>
       <NavbarItem name="Home" link="#" />
       <NavbarItem name="About" link="#" />
       <NavbarItem name="Contact" link="#" />

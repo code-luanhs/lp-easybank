@@ -1,7 +1,9 @@
+import { useState } from 'react';
+
 import {
   Heading,
   Container,
-
+  Button,
   ButtonNav
 } from './styles';
 
@@ -10,24 +12,24 @@ import { Navbar } from './Navbar';
 
 import logo from '../../assets/logo.svg';
 import iconMenu from '../../assets/icon-hamburger.svg';
-import Button from '../Button';
+import iconCloseMenu from '../../assets/icon-close.svg';
 
 export function Header() {
+
+  const [ menuActive, setMenuState ] = useState(false);
+
   return (
     <Heading>
       <Container>
         <img src={logo} alt="Logo" />
 
-        <ButtonNav>
-          <img src={iconMenu} alt="Menu" loading="lazy" />
+        <ButtonNav onClick={() => setMenuState(!menuActive)}>
+          <img src={!menuActive ? iconMenu : iconCloseMenu} alt="Menu" loading="lazy" />
         </ButtonNav>
 
-        <Navbar />
+        <Navbar class={menuActive ? 'active' : ''} />
 
-        <Button
-        link='http://localhost:3000/'
-        text='Request Invite'
-        />
+        <Button>Request Invite</Button>
 
       </Container>
     </Heading>

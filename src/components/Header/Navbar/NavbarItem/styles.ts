@@ -21,6 +21,15 @@ export const NavItem = styled.li`
     background-image: ${THEME.COLORS.BUTTON};
     transition: ${THEME.TRANSITION.DEFAULT};
   }
+
+  @media (max-width: 770px) {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    &::before {
+      top: 100%;
+    }
+  }
 `;
 
 export const Link = styled.a`
@@ -31,5 +40,10 @@ export const Link = styled.a`
 
   &:hover {
     color: ${THEME.COLORS.DARK_BLUE};
+  }
+
+  @media (max-width: 770px) {
+    color: ${THEME.COLORS.DARK_BLUE};
+    font-size: ${THEME.FONTS.SIZE.LARGE};
   }
 `;

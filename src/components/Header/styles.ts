@@ -5,7 +5,7 @@ import { THEME } from '../../util/theme';
 export const Heading = styled.header`
   position: relative;
   background-color: ${THEME.COLORS.WHITE};
-  z-index: 5;
+  z-index: 10;
 `;
 
 export const Container = styled.div`
@@ -18,6 +18,7 @@ export const Container = styled.div`
 
   @media (max-width: 770px) {
     padding: 25px;
+    height: 70px;
   }
 `;
 

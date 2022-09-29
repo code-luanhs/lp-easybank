@@ -18,8 +18,8 @@ import {
 } from "./styles";
 
 
-import logo from "../../assets/logo.svg";
-import invite from "../../assets/icon-.svg";
+import logo from "../../assets/logo-white.svg";
+// import invite from "../../assets/icon-.svg";
 import Button from "../Button";
 
 function Footer() {
@@ -29,19 +29,19 @@ function Footer() {
         <SocialIcons>
           <ImageEasybank src={logo} alt="aa" />
           <DivIcons>
-            <a href="http://localhost:3000/#">
+            <a href="#">
               <Facebook />
             </a>
-            <a href="http://localhost:3000/#">
+            <a href="#">
               <Youtube />
             </a>
-            <a href="http://localhost:3000/#">
+            <a href="#">
               <Twitter />
             </a>
-            <a href="http://localhost:3000/#">
+            <a href="#">
               <Pinterest />
             </a>
-            <a href="http://localhost:3000/#">
+            <a href="#">
               <Instagram />
             </a>
           </DivIcons>
@@ -56,7 +56,7 @@ function Footer() {
         </SocialContats>
         <SocialButton>
           <Button
-          link="http://localhost:3000/#"
+          link="#"
           text="Request Invite"
           />
           <DivCopy>
