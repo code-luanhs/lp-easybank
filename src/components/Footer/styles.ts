@@ -106,6 +106,8 @@ export const SocialButton = styled.div`
     flex-direction: column;
     padding: 0;
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -125,6 +127,8 @@ export const Request = styled.a`
     max-width: 180px;
     border-radius: 25px;
     padding: 12px 30px;
+    margin:0;
+
   }
 `;
 export const Icons = styled.a``;
