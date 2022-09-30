@@ -32,6 +32,7 @@ export const Button = styled.a`
   font-weight: ${THEME.FONTS.WEIGHT.BOLD};
   font-size: ${THEME.FONTS.SIZE.DEFAULT};
   transition: ${THEME.TRANSITION.DEFAULT};
+  cursor: pointer;
 
   &:hover {
     opacity: .8;
@@ -46,6 +47,7 @@ export const ButtonNav = styled.button`
   padding: 0;
   border: 0;
   background-color: transparent;
+
 
   @media (min-width: 770px) {
     display: none;
