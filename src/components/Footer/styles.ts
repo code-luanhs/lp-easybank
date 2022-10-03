@@ -76,12 +76,13 @@ export const DivCopy = styled.div`
   margin-top: 20px;
 `;
 
-export const Contats = styled.li`
+export const Contats = styled.a`
   color: ${THEME.COLORS.LIGHT_GRAYISH_BLUE};
   cursor: pointer;
   font-size: ${THEME.FONTS.SIZE.LARGE};
   font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
   padding: 0px 50px 0px 50px;
+  text-decoration:none;
   :hover {
     color: ${THEME.COLORS.LIME_GREEN};
     transition: ${THEME.TRANSITION.DEFAULT};

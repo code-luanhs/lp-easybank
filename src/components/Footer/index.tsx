@@ -47,12 +47,12 @@ function Footer() {
           </DivIcons>
         </SocialIcons>
         <SocialContats>
-          <Contats>About Us</Contats>
-          <Contats>Contact</Contats>
-          <Contats>Blog</Contats>
-          <Contats>Careers</Contats>
-          <Contats>Support</Contats>
-          <Contats>Privacy Policy</Contats>
+          <Contats href="#">About Us</Contats>
+          <Contats href="#">Contact</Contats>
+          <Contats href="#">Blog</Contats>
+          <Contats href="#">Careers</Contats>
+          <Contats href="#">Support</Contats>
+          <Contats href="#">Privacy Policy</Contats>
         </SocialContats>
         <SocialButton>
           <Button
