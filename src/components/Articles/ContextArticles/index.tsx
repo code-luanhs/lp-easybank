@@ -13,7 +13,7 @@ function ContextArticles({ url, by, title, content }: ArticleProps) {
       <ImageArticle src={url} alt="img" />
       <Swapper>
         <By>{by}</By>
-        <Title>{title}</Title>
+        <Title href="#">{title}</Title>
         <Context>{content}</Context>
       </Swapper>
     </Container>

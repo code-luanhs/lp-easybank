@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { THEME } from "../../util/theme";
 
 export const Title = styled.h1`
-  margin-left: 55px;
   font-weight: ${THEME.FONTS.WEIGHT.REGULAR};
+  margin-left:50px;
   @media (max-width: 770px) {
    margin-left:0;
   }
@@ -12,6 +12,8 @@ export const Container = styled.div`
   background: ${THEME.COLORS.VERY_LIGHT};
   display: flex;
   flex-direction: column;
+  justify-content:center;
+ 
 `;
 export const Swapper = styled.div`
   display: grid;
