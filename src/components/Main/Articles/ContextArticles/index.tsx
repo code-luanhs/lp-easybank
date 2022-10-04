@@ -1,4 +1,12 @@
-import { Container, ImageArticle, Swapper, By, Title, Context,DivImg } from "./styles";
+import {
+  Container,
+  ImageArticle,
+  Swapper,
+  By,
+  Title,
+  Context,
+  DivImg
+} from "./styles";
 
 interface ArticleProps {
   url: string;

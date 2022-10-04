@@ -1,12 +1,14 @@
 import styled from "styled-components";
-import { THEME } from "../../../util/theme";
+import { THEME } from "../../../../util/theme";
 
 export const Container = styled.div`
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0;
   background: ${THEME.COLORS.WHITE};
   border-radius: 6px;
 
+  @media (max-width: 770px) {
+    margin: 0;
+  }
 `;
 export const ImageArticle = styled.img`
   width: 100%;
@@ -22,14 +24,14 @@ export const Swapper = styled.div`
 `;
 
 export const DivImg = styled.div`
-width:100%;
-height:280px;
+  width:100%;
+  height:280px;
 `;
 export const By = styled.span`
   font-size: 14px;
   color: ${THEME.COLORS.GRAYISH_BLUE};
   font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
-  margin-top:10px; 
+  margin-top:10px;
 
 `;
 export const Title = styled.a`
@@ -40,8 +42,9 @@ export const Title = styled.a`
   transition: ${THEME.TRANSITION.DEFAULT};
   margin-top:10px;
   margin-bottom:5px;
-  :hover{
-   color: ${THEME.COLORS.GRAYISH_BLUE}; 
+
+  &:hover{
+    color: ${THEME.COLORS.GRAYISH_BLUE};
   }
 `;
 export const Context = styled.span`

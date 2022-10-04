@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import {
   BsFacebook,
   BsInstagram,
@@ -6,11 +7,19 @@ import {
   BsPinterest,
   BsYoutube,
 } from "react-icons/bs";
+
 import { THEME } from "../../util/theme";
 
-export const Container = styled.div`
+export const InfoFooter = styled.footer`
   background: ${THEME.COLORS.DARK_BLUE};
+`;
+
+export const Container = styled.div`
   height: 140px;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+
   @media (max-width: 770px) {
     height: 445px;
   }
@@ -25,6 +34,7 @@ export const Copyright = styled.span`
 export const SwapperFooter = styled.div`
   display: flex;
   justify-content: space-between;
+
   @media (max-width: 770px) {
     display: flex;
     flex-direction: column;
@@ -38,7 +48,8 @@ export const SocialIcons = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 0px 0px 70px;
+  padding: 30px 0 0;
+
   @media (max-width: 770px) {
     display: flex;
     flex-direction: column;
@@ -53,7 +64,8 @@ export const SocialContats = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0 0;
+
   @media (max-width: 770px) {
     display: flex;
     flex-direction: column;
@@ -63,12 +75,14 @@ export const SocialContats = styled.ul`
     margin-top: 20px;
   }
 `;
+
 export const DivIcons = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 30px;
 `;
+
 export const DivCopy = styled.div`
   display: flex;
   justify-content: space-between;
@@ -81,13 +95,14 @@ export const Contats = styled.a`
   cursor: pointer;
   font-size: ${THEME.FONTS.SIZE.LARGE};
   font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
-  padding: 0px 50px 0px 50px;
+  padding: 0 50px;
   text-decoration:none;
-  :hover {
+  transition: ${THEME.TRANSITION.DEFAULT};
+
+  &:hover {
     color: ${THEME.COLORS.LIME_GREEN};
-    transition: ${THEME.TRANSITION.DEFAULT};
   }
-  
+
   @media (max-width: 770px) {
     display: flex;
     flex-direction: column;
@@ -98,10 +113,11 @@ export const Contats = styled.a`
 `;
 
 export const SocialButton = styled.div`
-  padding: 30px 70px 0px 0px;
+  padding: 30px 0 0;
   align-items:flex-end;
   display:flex;
   flex-direction: column;
+
   @media (max-width: 770px) {
     display: flex;
     flex-direction: column;
@@ -123,17 +139,22 @@ export const Request = styled.a`
   font-size: ${THEME.FONTS.SIZE.DEFAULT};
   transition: ${THEME.TRANSITION.DEFAULT};
   cursor: pointer;
+
   @media (max-width: 770px) {
     text-align: center;
     max-width: 180px;
     border-radius: 25px;
     padding: 12px 30px;
     margin:0;
-
   }
 `;
-export const Icons = styled.a``;
+
+export const Icons = styled.a`
+
+`;
+
 export const ImageEasybank = styled.img`
+
 `;
 
 export const Facebook = styled(BsFacebook)`
@@ -142,52 +163,61 @@ export const Facebook = styled(BsFacebook)`
   width: 20px;
   margin-top: 6px;
   cursor: pointer;
-  :hover {
+  transition: ${THEME.TRANSITION.DEFAULT};
+
+  &:hover {
     color: ${THEME.COLORS.LIME_GREEN};
-    transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;
+
 export const Instagram = styled(BsInstagram)`
   color: ${THEME.COLORS.WHITE};
   height: 20px;
   width: 20px;
   margin-top: 6px;
   cursor: pointer;
-  :hover {
+
+  &:hover {
     color: ${THEME.COLORS.LIME_GREEN};
     transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;
+
 export const Youtube = styled(BsYoutube)`
   color: ${THEME.COLORS.WHITE};
   height: 20px;
   width: 20px;
   margin-top: 6px;
   cursor: pointer;
-  :hover {
+  transition: ${THEME.TRANSITION.DEFAULT};
+
+  &:hover {
     color: ${THEME.COLORS.LIME_GREEN};
-    transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;
+
 export const Twitter = styled(BsTwitter)`
   color: ${THEME.COLORS.WHITE};
   height: 20px;
   width: 20px;
   margin-top: 6px;
   cursor: pointer;
-  :hover {
+  transition: ${THEME.TRANSITION.DEFAULT};
+
+  &:hover {
     color: ${THEME.COLORS.LIME_GREEN};
-    transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;
+
 export const Pinterest = styled(BsPinterest)`
   color: ${THEME.COLORS.WHITE};
   height: 20px;
   width: 20px;
   margin-top: 6px;
   cursor: pointer;
-  :hover {
+  transition: ${THEME.TRANSITION.DEFAULT};
+
+  &:hover {
     color: ${THEME.COLORS.LIME_GREEN};
-    transition: ${THEME.TRANSITION.DEFAULT};
   }
 `;

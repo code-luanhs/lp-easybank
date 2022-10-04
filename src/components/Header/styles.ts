@@ -9,12 +9,12 @@ export const Heading = styled.header`
 `;
 
 export const Container = styled.div`
-  max-width: 1140px;
+  max-width: 1170px;
   margin: 0 auto;
+  padding: 10px 30px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 15px;
 
   @media (max-width: 770px) {
     padding: 25px;

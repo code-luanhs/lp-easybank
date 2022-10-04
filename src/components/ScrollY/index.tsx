@@ -6,13 +6,8 @@ const ScrollButton = () => {
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setVisible(true);
-    } else if (scrolled <= 300) {
-      setVisible(false);
-    } else if (scrolled >= 300) {
-      setVisible(false);
-    }
+
+    scrolled > 300 ? setVisible(true) : setVisible(false);
   };
 
   const scrollToTop = () => {
@@ -28,7 +23,12 @@ const ScrollButton = () => {
     <BtnUp>
       <IconTop
         onClick={scrollToTop}
-        style={{ display: visible ? "inline" : "none" }}
+        style={
+          {
+            height: visible ? '40px' : 0,
+            transition: '300ms'
+          }
+        }
       />
     </BtnUp>
   );
