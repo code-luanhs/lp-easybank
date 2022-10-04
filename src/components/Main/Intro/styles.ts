@@ -25,9 +25,9 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
-  max-width: 1140px;
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 150px 0 375px;
+  padding: 150px 30px 375px;
 
   @media (max-width: 770px) {
     text-align: center;
