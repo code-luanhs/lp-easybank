@@ -10,8 +10,7 @@ export const BtnUp = styled.a`
   cursor: pointer;
   transition: ${THEME.TRANSITION.DEFAULT};
   @media (max-width: 770px) {
-    left: 50%;
-    display: none;
+    left: 85%;
   }
 `;
 
