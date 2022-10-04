@@ -1,12 +1,15 @@
-import { Container, Title, Swapper, TitleDiv } from "./styles";
-
+import { Container, Title, Swapper, TitleDiv,DivTop,BtnTop,IconTop } from "./styles";
 import ContextArticles from "./ContextArticles";
 import currency from "../../assets/image-currency.jpg"
 import restaurant from "../../assets/image-restaurant.jpg"
 import confetti from "../../assets/image-confetti.jpg"
 import plane from "../../assets/image-plane.jpg"
+import ScrollButton from "../ScrollY";
 
 function Articles() {
+
+
+   
   return (
     <Container>
       <TitleDiv>
@@ -37,6 +40,7 @@ function Articles() {
           content="After a lot of hard work by the whole team, were excited to launch our closed beta. Its easy to request an invite throwgth the site..."
           by="By Clara Bumbsman"
         />
+          <ScrollButton/>
       </Swapper>
     </Container>
   );

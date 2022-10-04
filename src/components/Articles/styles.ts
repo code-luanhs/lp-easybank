@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { THEME } from "../../util/theme";
+import {RiArrowUpCircleLine} from "react-icons/ri"
 
 export const Title = styled.h1`
   font-weight: ${THEME.FONTS.WEIGHT.REGULAR};
@@ -31,4 +32,21 @@ export const TitleDiv = styled.div`
   @media (max-width: 770px) {
     text-align: center;
   }
+`;
+
+export const DivTop = styled.div`
+position:fixed;
+bottom:9rem;
+left:97%;
+`;
+export const BtnTop = styled.a`
+
+
+`;
+export const IconTop = styled(RiArrowUpCircleLine)`
+height:25px;
+width: 25px;
+color: ${THEME.COLORS.DARK_BLUE};
+cursor:pointer;
+
 `;
