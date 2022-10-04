@@ -1,4 +1,4 @@
-import { Container, ImageArticle, Swapper, By, Title, Context } from "./styles";
+import { Container, ImageArticle, Swapper, By, Title, Context,DivImg } from "./styles";
 
 interface ArticleProps {
   url: string;
@@ -10,7 +10,9 @@ interface ArticleProps {
 function ContextArticles({ url, by, title, content }: ArticleProps) {
   return (
     <Container>
+      <DivImg>
       <ImageArticle src={url} alt="img" />
+      </DivImg>
       <Swapper>
         <By>{by}</By>
         <Title href="#">{title}</Title>

@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 export const ImageArticle = styled.img`
   width: 100%;
-  height: 280px;
+  height: 100%;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 
@@ -19,6 +19,11 @@ export const Swapper = styled.div`
   padding: 10px;
   display:flex;
   flex-direction: column;
+`;
+
+export const DivImg = styled.div`
+width:100%;
+height:280px;
 `;
 export const By = styled.span`
   font-size: 14px;
