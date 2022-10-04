@@ -13,12 +13,15 @@ const ScrollButton = () =>{
     else if (scrolled <= 300){
       setVisible(false)
     }
+    else if (scrolled >= 300){
+      setVisible(false)
+    }
   };
   
   const scrollToTop = () =>{
     window.scrollTo({
       top: 0, 
-      behavior: 'smooth'
+      behavior:'smooth'
     });
   };
   
