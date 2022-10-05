@@ -95,9 +95,13 @@ export const Contats = styled.a`
   cursor: pointer;
   font-size: ${THEME.FONTS.SIZE.LARGE};
   font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
-  padding: 0 50px;
+  /* padding: 0 50px; */
   text-decoration:none;
   transition: ${THEME.TRANSITION.DEFAULT};
+
+  :last-child{
+    margin-right:120px;
+  }
 
   &:hover {
     color: ${THEME.COLORS.LIME_GREEN};
