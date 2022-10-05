@@ -7,7 +7,6 @@ export const BtnUp = styled.a`
   bottom: 50px;
   right: 25px;
   z-index: 1;
-  cursor: pointer;
   transition: ${THEME.TRANSITION.DEFAULT};
   z-index: 10;
 

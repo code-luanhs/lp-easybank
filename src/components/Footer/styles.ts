@@ -113,6 +113,10 @@ export const Contats = styled.a`
     align-items: center;
     justify-content: center;
     margin-top: 12px;
+
+    :last-child{
+      margin-right:0;
+    }
   }
 `;
 
