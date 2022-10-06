@@ -74,6 +74,10 @@ export const SocialContats = styled.ul`
     padding: 0;
     margin-top: 20px;
   }
+  @media (max-width: 880px) {
+    margin-left: 20px;
+    
+}
 `;
 
 export const DivIcons = styled.div`
@@ -96,11 +100,11 @@ export const Contats = styled.a`
   font-size: ${THEME.FONTS.SIZE.LARGE};
   font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
   /* padding: 0 50px; */
-  text-decoration:none;
+  text-decoration: none;
   transition: ${THEME.TRANSITION.DEFAULT};
 
-  :last-child{
-    margin-right:120px;
+  :last-child {
+    margin-right: 120px;
   }
 
   &:hover {
@@ -114,16 +118,16 @@ export const Contats = styled.a`
     justify-content: center;
     margin-top: 12px;
 
-    :last-child{
-      margin-right:0;
+    :last-child {
+      margin-right: 0;
     }
   }
 `;
 
 export const SocialButton = styled.div`
   padding: 30px 0 0;
-  align-items:flex-end;
-  display:flex;
+  align-items: flex-end;
+  display: flex;
   flex-direction: column;
 
   @media (max-width: 770px) {
@@ -153,17 +157,13 @@ export const Request = styled.a`
     max-width: 180px;
     border-radius: 25px;
     padding: 12px 30px;
-    margin:0;
+    margin: 0;
   }
 `;
 
-export const Icons = styled.a`
+export const Icons = styled.a``;
 
-`;
-
-export const ImageEasybank = styled.img`
-
-`;
+export const ImageEasybank = styled.img``;
 
 export const Facebook = styled(BsFacebook)`
   color: ${THEME.COLORS.WHITE};
