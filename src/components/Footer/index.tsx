@@ -7,7 +7,6 @@ import {
   SocialContats,
   Contats,
   SocialButton,
-  Request,
   Facebook,
   Youtube,
   Twitter,
@@ -17,7 +16,6 @@ import {
   DivIcons,
   DivCopy,
 } from "./styles";
-
 
 import logo from "../../assets/logo-white.svg";
 // import invite from "../../assets/icon-.svg";
@@ -57,10 +55,7 @@ function Footer() {
             <Contats href="#">Privacy Policy</Contats>
           </SocialContats>
           <SocialButton>
-            <Button
-            link="#"
-            text="Request Invite"
-            />
+            <Button link="#" text="Request Invite" />
             <DivCopy>
               <Copyright>₢ Easybank. All Rights Reserved</Copyright>
             </DivCopy>

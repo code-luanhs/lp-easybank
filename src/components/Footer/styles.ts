@@ -76,15 +76,14 @@ export const SocialContats = styled.ul`
   }
   @media (max-width: 880px) {
     margin-left: 20px;
-    
-}
+  }
 `;
 
 export const DivIcons = styled.div`
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const DivCopy = styled.div`
@@ -184,6 +183,7 @@ export const Instagram = styled(BsInstagram)`
   width: 20px;
   margin-top: 6px;
   cursor: pointer;
+  margin-left: 15px;
 
   &:hover {
     color: ${THEME.COLORS.LIME_GREEN};
@@ -197,6 +197,7 @@ export const Youtube = styled(BsYoutube)`
   width: 20px;
   margin-top: 6px;
   cursor: pointer;
+  margin-left: 15px;
   transition: ${THEME.TRANSITION.DEFAULT};
 
   &:hover {
@@ -210,6 +211,7 @@ export const Twitter = styled(BsTwitter)`
   width: 20px;
   margin-top: 6px;
   cursor: pointer;
+  margin-left: 15px;
   transition: ${THEME.TRANSITION.DEFAULT};
 
   &:hover {
@@ -223,6 +225,7 @@ export const Pinterest = styled(BsPinterest)`
   width: 20px;
   margin-top: 6px;
   cursor: pointer;
+  margin-left: 15px;
   transition: ${THEME.TRANSITION.DEFAULT};
 
   &:hover {
