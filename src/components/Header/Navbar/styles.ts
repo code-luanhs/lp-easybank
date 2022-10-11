@@ -20,8 +20,6 @@ export const Nav = styled.ul`
     text-align: center;
     box-shadow: inset 7px 3px 1.3em #eeedf1, 18px 5px 1em #2e3450;
 
-
-
     &.active {
       display: block;
       
