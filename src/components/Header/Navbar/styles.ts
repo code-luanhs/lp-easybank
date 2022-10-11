@@ -18,7 +18,7 @@ export const Nav = styled.ul`
     border-radius: 6px;
     padding: 25px 25px 0;
     text-align: center;
-    box-shadow: inset 10px 5px 1.3em #bebbc9, 10px 5px 1.3em #2e3450;
+    box-shadow: inset 7px 3px 1.3em #eeedf1, 18px 5px 1em #2e3450;
 
 
 
