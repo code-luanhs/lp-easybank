@@ -7,7 +7,6 @@ export const Nav = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 30px;
-
   @media (max-width: 770px) {
     display: none;
     position: absolute;
@@ -19,9 +18,12 @@ export const Nav = styled.ul`
     border-radius: 6px;
     padding: 25px 25px 0;
     text-align: center;
+    box-shadow: 12px 10px 26px #2c304c;
 
     &.active {
       display: block;
+      
+      
     }
   }
 `;
