@@ -37,14 +37,15 @@ export function Articles() {
   };
 
   return (
-    <Section>
-      <Container>
+    <Section
+    initial="offscreen"
+    whileInView="onscreen"
+    viewport={{ once: true, amount: 0.8 }}>
+      <Container
+      variants={cardVariants3}>
         <TitleDiv
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 0.8 }}
         >
-          <Title variants={cardVariants3}>Latest Articles</Title>
+          <Title >Latest Articles</Title>
         </TitleDiv>
         <Swapper>
           <ContextArticles

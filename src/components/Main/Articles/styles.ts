@@ -4,11 +4,11 @@ import { RiArrowUpCircleLine } from "react-icons/ri";
 
 import { motion } from "framer-motion";
 
-export const Section = styled.section`
+export const Section = styled(motion.section)`
   background: ${THEME.COLORS.VERY_LIGHT};
 `;
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;

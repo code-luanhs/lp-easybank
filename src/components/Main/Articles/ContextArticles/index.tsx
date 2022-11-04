@@ -16,10 +16,11 @@ interface ArticleProps {
 }
 
 function ContextArticles({ url, by, title, content }: ArticleProps) {
+
   const cardVariants2 = {
     offscreen: {
       y: 100,
-      opacity: 0.3,
+      opacity: 0,
     },
     onscreen: {
       y: 0,
@@ -27,8 +28,9 @@ function ContextArticles({ url, by, title, content }: ArticleProps) {
       opacity: 1,
       transition: {
         type: "spring",
-        bounce: 0.4,
-        duration: 0.6,
+        bounce: 0.2,
+        duration: 0.4,
+        
       },
     },
   };
