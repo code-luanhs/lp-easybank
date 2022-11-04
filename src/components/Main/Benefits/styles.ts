@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { THEME } from '../../../util/theme';
+import { THEME } from "../../../util/theme";
+import { motion } from "framer-motion";
 
 export const Section = styled.section`
   background-color: ${THEME.COLORS.LIGHT_GRAYISH_BLUE};
@@ -11,7 +12,7 @@ export const Section = styled.section`
   }
 `;
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   max-width: 1170px;
   margin: 0 auto;
   padding: 100px 30px;
@@ -22,13 +23,13 @@ export const Container = styled.div`
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled(motion.h2)`
   font-size: ${THEME.FONTS.SIZE.XLARGE};
   font-weight: ${THEME.FONTS.WEIGHT.REGULAR};
   margin: 0;
 `;
 
-export const Content = styled.p`
+export const Content = styled(motion.p)`
   margin: 1.5rem 0 3rem;
   color: ${THEME.COLORS.GRAYISH_BLUE};
   line-height: 1.5;

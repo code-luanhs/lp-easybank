@@ -5,7 +5,7 @@ import {
   By,
   Title,
   Context,
-  DivImg
+  DivImg,
 } from "./styles";
 
 interface ArticleProps {
@@ -16,10 +16,32 @@ interface ArticleProps {
 }
 
 function ContextArticles({ url, by, title, content }: ArticleProps) {
+  const cardVariants2 = {
+    offscreen: {
+      y: 100,
+      opacity: 0.3,
+    },
+    onscreen: {
+      y: 0,
+      rotate: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.6,
+      },
+    },
+  };
+
   return (
-    <Container>
+    <Container
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+      variants={cardVariants2}
+    >
       <DivImg>
-      <ImageArticle src={url} alt="img" />
+        <ImageArticle src={url} alt="img" />
       </DivImg>
       <Swapper>
         <By>{by}</By>

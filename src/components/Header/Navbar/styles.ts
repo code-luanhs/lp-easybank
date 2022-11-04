@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { THEME } from '../../../util/theme';
+import { THEME } from "../../../util/theme";
 
 export const Nav = styled.ul`
   display: flex;
@@ -22,8 +22,6 @@ export const Nav = styled.ul`
 
     &.active {
       display: block;
-      
-      
     }
   }
 `;

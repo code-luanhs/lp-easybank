@@ -1,8 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { THEME } from '../../util/theme';
+import { THEME } from "../../util/theme";
 
-export const Link = styled.a`
+import { motion } from "framer-motion";
+
+export const Link = styled(motion.a)`
   display: inline-block;
   text-decoration: none;
   border-radius: 25px;
@@ -14,6 +16,6 @@ export const Link = styled.a`
   transition: ${THEME.TRANSITION.DEFAULT};
 
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
 `;

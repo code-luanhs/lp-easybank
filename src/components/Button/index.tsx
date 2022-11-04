@@ -1,4 +1,4 @@
-import { Link } from './styles';
+import { Link } from "./styles";
 
 interface Props {
   text: string;
@@ -7,10 +7,15 @@ interface Props {
 
 export function Button(props: Props) {
   return (
-    <Link href={props.link}>
+    <Link
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 1 }}
+      href={props.link}
+    >
       {props.text}
     </Link>
-  )
+  );
 }
 
-export default Button
+export default Button;

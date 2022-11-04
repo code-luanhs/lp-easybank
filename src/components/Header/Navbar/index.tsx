@@ -1,5 +1,6 @@
-import { NavbarItem } from './NavbarItem';
-import { Nav } from './styles';
+import { motion } from "framer-motion";
+import { NavbarItem } from "./NavbarItem";
+import { Nav } from "./styles";
 
 interface Props {
   class: string;
@@ -14,7 +15,7 @@ export function Navbar(props: Props) {
       <NavbarItem name="Blog" link="#" />
       <NavbarItem name="Careers" link="#" />
     </Nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

@@ -10,15 +10,17 @@ import {
 
 import { THEME } from "../../util/theme";
 
+import { motion } from "framer-motion";
+
 export const InfoFooter = styled.footer`
   background: ${THEME.COLORS.DARK_BLUE};
 `;
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   height: 140px;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 px;
 
   @media (max-width: 770px) {
     height: 445px;
@@ -43,7 +45,7 @@ export const SwapperFooter = styled.div`
   }
 `;
 
-export const SocialIcons = styled.div`
+export const SocialIcons = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +62,7 @@ export const SocialIcons = styled.div`
   }
 `;
 
-export const SocialContats = styled.ul`
+export const SocialContats = styled(motion.ul)`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -79,21 +81,21 @@ export const SocialContats = styled.ul`
   }
 `;
 
-export const DivIcons = styled.div`
+export const DivIcons = styled(motion.div)`
   width: 100%;
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
 `;
 
-export const DivCopy = styled.div`
+export const DivCopy = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 20px;
 `;
 
-export const Contats = styled.a`
+export const Contats = styled(motion.a)`
   color: ${THEME.COLORS.LIGHT_GRAYISH_BLUE};
   cursor: pointer;
   font-size: ${THEME.FONTS.SIZE.LARGE};
@@ -123,7 +125,7 @@ export const Contats = styled.a`
   }
 `;
 
-export const SocialButton = styled.div`
+export const SocialButton = styled(motion.div)`
   padding: 30px 0 0;
   align-items: flex-end;
   display: flex;
@@ -162,7 +164,7 @@ export const Request = styled.a`
 
 export const Icons = styled.a``;
 
-export const ImageEasybank = styled.img``;
+export const ImageEasybank = styled(motion.img)``;
 
 export const Facebook = styled(BsFacebook)`
   color: ${THEME.COLORS.WHITE};

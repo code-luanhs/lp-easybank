@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
-import { THEME } from '../../util/theme';
+import { THEME } from "../../util/theme";
 
 export const Heading = styled.header`
   position: relative;
@@ -22,7 +23,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Button = styled.a`
+export const Button = styled(motion.a)`
   display: inline-block;
   text-decoration: none;
   border-radius: 25px;
@@ -35,7 +36,7 @@ export const Button = styled.a`
   cursor: pointer;
 
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   @media (max-width: 770px) {
@@ -47,7 +48,6 @@ export const ButtonNav = styled.button`
   padding: 0;
   border: 0;
   background-color: transparent;
-
 
   @media (min-width: 770px) {
     display: none;

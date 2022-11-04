@@ -6,24 +6,45 @@ import {
   TitleDiv,
   DivTop,
   BtnTop,
-  IconTop
+  IconTop,
 } from "./styles";
 
 import ContextArticles from "./ContextArticles";
 
-import currency     from "../../../assets/image-currency.jpg";
-import restaurant   from "../../../assets/image-restaurant.jpg";
-import confetti     from "../../../assets/image-confetti.jpg";
-import plane        from "../../../assets/image-plane.jpg";
+import currency from "../../../assets/image-currency.jpg";
+import restaurant from "../../../assets/image-restaurant.jpg";
+import confetti from "../../../assets/image-confetti.jpg";
+import plane from "../../../assets/image-plane.jpg";
 
 import ScrollButton from "../../ScrollY";
 
 export function Articles() {
+  const cardVariants3 = {
+    offscreen: {
+      y: 200,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      rotate: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
     <Section>
       <Container>
-        <TitleDiv>
-          <Title>Latest Articles</Title>
+        <TitleDiv
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+        >
+          <Title variants={cardVariants3}>Latest Articles</Title>
         </TitleDiv>
         <Swapper>
           <ContextArticles

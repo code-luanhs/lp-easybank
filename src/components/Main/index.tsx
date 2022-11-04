@@ -1,6 +1,6 @@
-import { Intro } from './Intro';
-import { Benefits } from './Benefits';
-import { Articles } from './Articles';
+import { Intro } from "./Intro";
+import { Benefits } from "./Benefits";
+import { Articles } from "./Articles";
 
 export function Main() {
   return (
@@ -9,7 +9,7 @@ export function Main() {
       <Benefits />
       <Articles />
     </main>
-  )
+  );
 }
 
-export default Main
+export default Main;

@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { THEME } from "../../../../util/theme";
 
-export const Container = styled.div`
+import { motion } from "framer-motion";
+
+export const Container = styled(motion.div)`
   margin: 40px 0;
   background: ${THEME.COLORS.WHITE};
   border-radius: 6px;
@@ -15,35 +17,33 @@ export const ImageArticle = styled.img`
   height: 100%;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-
 `;
 export const Swapper = styled.div`
   padding: 10px;
-  display:flex;
+  display: flex;
   flex-direction: column;
 `;
 
 export const DivImg = styled.div`
-  width:100%;
-  height:280px;
+  width: 100%;
+  height: 280px;
 `;
 export const By = styled.span`
   font-size: 14px;
   color: ${THEME.COLORS.GRAYISH_BLUE};
   font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
-  margin-top:10px;
-
+  margin-top: 10px;
 `;
 export const Title = styled.a`
   font-size: 22px;
   color: ${THEME.COLORS.DARK_BLUE};
   font-weight: ${THEME.FONTS.WEIGHT.REGULAR};
-  text-decoration:none;
+  text-decoration: none;
   transition: ${THEME.TRANSITION.DEFAULT};
-  margin-top:10px;
-  margin-bottom:5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 
-  &:hover{
+  &:hover {
     color: ${THEME.COLORS.GRAYISH_BLUE};
   }
 `;
@@ -52,5 +52,5 @@ export const Context = styled.span`
   margin-top: 10px;
   color: ${THEME.COLORS.GRAYISH_BLUE};
   font-weight: ${THEME.FONTS.WEIGHT.LIGHT};
-  margin-bottom:10px;
+  margin-bottom: 10px;
 `;

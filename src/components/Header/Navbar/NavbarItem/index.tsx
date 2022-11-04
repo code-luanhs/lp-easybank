@@ -1,7 +1,4 @@
-import {
-  NavItem,
-  Link
-} from './styles';
+import { NavItem, Link } from "./styles";
 
 interface Props {
   name: string;
@@ -10,12 +7,14 @@ interface Props {
 
 export function NavbarItem(props: Props) {
   return (
-    <NavItem>
-      <Link href={props.link}>
-        {props.name}
-      </Link>
+    <NavItem
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 1.5 }}
+    >
+      <Link href={props.link}>{props.name}</Link>
     </NavItem>
-  )
+  );
 }
 
-export default NavbarItem
+export default NavbarItem;

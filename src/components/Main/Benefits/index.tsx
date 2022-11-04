@@ -1,26 +1,42 @@
-import {
-  Section,
-  Container,
-  Title,
-  Content,
-  ListBenefits
-} from './styles';
+import { Section, Container, Title, Content, ListBenefits } from "./styles";
 
-import { BenefitsItem } from './BenefitsItem';
+import { BenefitsItem } from "./BenefitsItem";
 
-import iconOnline from '../../../assets/icon-online.svg';
-import iconBudgeting from '../../../assets/icon-budgeting.svg';
-import iconOnboarding from '../../../assets/icon-onboarding.svg';
-import iconApi from '../../../assets/icon-api.svg';
+import iconOnline from "../../../assets/icon-online.svg";
+import iconBudgeting from "../../../assets/icon-budgeting.svg";
+import iconOnboarding from "../../../assets/icon-onboarding.svg";
+import iconApi from "../../../assets/icon-api.svg";
 
 export function Benefits() {
+  const cardVariants = {
+    offscreen: {
+      y: 200,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      rotate: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
   return (
     <Section>
-      <Container>
+      <Container
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <header>
-          <Title>Why choose Easybank?</Title>
-          <Content>
-            We leverage Open Banking to turn your bank account into your financial hub.<br />
+          <Title variants={cardVariants}>Why choose Easybank?</Title>
+          <Content variants={cardVariants}>
+            We leverage Open Banking to turn your bank account into your
+            financial hub.
+            <br />
             Control your finances like never before.
           </Content>
         </header>
@@ -49,7 +65,7 @@ export function Benefits() {
         </ListBenefits>
       </Container>
     </Section>
-  )
+  );
 }
 
-export default Benefits
+export default Benefits;

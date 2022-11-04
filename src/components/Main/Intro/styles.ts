@@ -1,14 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import backgroundImage from '../../../assets/bg-intro-desktop.svg';
+import backgroundImage from "../../../assets/bg-intro-desktop.svg";
 
-import { THEME } from '../../../util/theme';
+import { THEME } from "../../../util/theme";
 
-export const Section = styled.section`
-  background:
-    url(${backgroundImage})
-    no-repeat
-    100% 0
+import { motion } from "framer-motion";
+
+export const Section = styled(motion.section)`
+  background: url(${backgroundImage}) no-repeat 100% 0
     ${THEME.COLORS.VERY_LIGHT};
   position: relative;
   overflow: hidden;
@@ -35,7 +34,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
   max-width: 400px;
   margin-right: auto;
 
@@ -57,7 +56,7 @@ export const Text = styled.p`
   margin: 1rem 0 2rem;
 `;
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   position: absolute;
   top: -120px;
   right: -130px;

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { THEME } from '../../../../util/theme';
+import { THEME } from "../../../../util/theme";
 
 export const Title = styled.h3`
   font-size: 1.4rem;
@@ -14,4 +14,4 @@ export const Content = styled.p`
   font-size: ${THEME.FONTS.SIZE.LARGE};
   margin: 0;
   line-height: 1.5;
-`
+`;

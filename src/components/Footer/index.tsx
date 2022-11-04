@@ -22,13 +22,69 @@ import logo from "../../assets/logo-white.svg";
 import Button from "../Button";
 
 function Footer() {
+  const cardVariants2 = {
+    offscreen: {
+      x: -50,
+      opacity: 0,
+    },
+    onscreen: {
+      x: 0,
+      rotate: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 0.4,
+        delay: 0.3,
+      },
+    },
+  };
+  const cardVariants4 = {
+    offscreen: {
+      x: 50,
+      opacity: 0,
+    },
+    onscreen: {
+      x: -50,
+      rotate: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 0.4,
+        delay: 0.3,
+      },
+    },
+  };
+
+  const cardVariants3 = {
+    offscreen: {
+      y: 20,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      rotate: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 0.4,
+        delay: 0.3,
+      },
+    },
+  };
   return (
     <InfoFooter>
-      <Container>
+      <Container
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <SwapperFooter>
           <SocialIcons>
-            <ImageEasybank src={logo} alt="aa" />
-            <DivIcons>
+            <ImageEasybank variants={cardVariants2} src={logo} alt="aa" />
+            <DivIcons variants={cardVariants2}>
               <a href="#">
                 <Facebook />
               </a>
@@ -47,14 +103,26 @@ function Footer() {
             </DivIcons>
           </SocialIcons>
           <SocialContats>
-            <Contats href="#">About Us</Contats>
-            <Contats href="#">Contact</Contats>
-            <Contats href="#">Blog</Contats>
-            <Contats href="#">Careers</Contats>
-            <Contats href="#">Support</Contats>
-            <Contats href="#">Privacy Policy</Contats>
+            <Contats variants={cardVariants3} href="#">
+              About Us
+            </Contats>
+            <Contats variants={cardVariants3} href="#">
+              Contact
+            </Contats>
+            <Contats variants={cardVariants3} href="#">
+              Blog
+            </Contats>
+            <Contats variants={cardVariants3} href="#">
+              Careers
+            </Contats>
+            <Contats variants={cardVariants3} href="#">
+              Support
+            </Contats>
+            <Contats variants={cardVariants3} href="#">
+              Privacy Policy
+            </Contats>
           </SocialContats>
-          <SocialButton>
+          <SocialButton variants={cardVariants4}>
             <Button link="#" text="Request Invite" />
             <DivCopy>
               <Copyright>₢ Easybank. All Rights Reserved</Copyright>

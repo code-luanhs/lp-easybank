@@ -1,8 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { THEME } from '../../../../util/theme';
+import { THEME } from "../../../../util/theme";
 
-export const NavItem = styled.li`
+import { motion } from "framer-motion";
+
+export const NavItem = styled(motion.li)`
   position: relative;
 
   &:hover::before {
@@ -10,7 +12,7 @@ export const NavItem = styled.li`
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: calc(100% + 21px);
