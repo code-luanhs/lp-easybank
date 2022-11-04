@@ -37,7 +37,7 @@ export function Header() {
         <Button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
+          transition={{ duration: 1 }}
         >
           Request Invite
         </Button>

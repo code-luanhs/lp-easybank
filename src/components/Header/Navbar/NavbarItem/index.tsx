@@ -10,7 +10,7 @@ export function NavbarItem(props: Props) {
     <NavItem
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 1.5 }}
+      transition={{ duration: 1 }}
     >
       <Link href={props.link}>{props.name}</Link>
     </NavItem>
