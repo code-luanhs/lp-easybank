@@ -20,7 +20,7 @@ function ContextArticles({ url, by, title, content }: ArticleProps) {
   const cardVariants2 = {
     offscreen: {
       y: 100,
-      opacity: 0,
+      opacity: 1,
     },
     onscreen: {
       y: 0,

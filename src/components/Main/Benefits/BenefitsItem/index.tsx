@@ -11,7 +11,7 @@ export function BenefitsItem(props: Props) {
   const cardVariants2 = {
     offscreen: {
       y: 200,
-      opacity: 0,
+      opacity: 1,
     },
     onscreen: {
       y: 0,

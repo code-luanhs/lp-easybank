@@ -22,7 +22,7 @@ export function Articles() {
   const cardVariants3 = {
     offscreen: {
       y: 200,
-      opacity: 0,
+      opacity: 1,
     },
     onscreen: {
       y: 0,

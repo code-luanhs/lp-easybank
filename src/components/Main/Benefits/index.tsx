@@ -6,12 +6,14 @@ import iconOnline from "../../../assets/icon-online.svg";
 import iconBudgeting from "../../../assets/icon-budgeting.svg";
 import iconOnboarding from "../../../assets/icon-onboarding.svg";
 import iconApi from "../../../assets/icon-api.svg";
+import { useEffect, useState } from "react";
 
 export function Benefits() {
+
   const cardVariants = {
     offscreen: {
       y: 200,
-      opacity: 0,
+      opacity: 1,
     },
     onscreen: {
       y: 0,

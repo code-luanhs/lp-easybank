@@ -22,6 +22,7 @@ import logo from "../../assets/logo-white.svg";
 import Button from "../Button";
 
 function Footer() {
+  
   const cardVariants2 = {
     offscreen: {
       x: -50,
