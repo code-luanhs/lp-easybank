@@ -17,9 +17,9 @@ export function Header() {
     <Heading>
       <Container>
         <motion.img
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          initial={{ opacity:0.7,scale: 0.3 }}
+          animate={{ opacity:1,scale: 1 }}
+          transition={{ duration: 1,delay:0.2 }}
           src={logo}
           alt="Logo"
         />
@@ -35,9 +35,9 @@ export function Header() {
         <Navbar class={menuActive ? "active" : ""} />
 
         <Button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          initial={{ opacity:0.7,scale: 0.3 }}
+          animate={{ opacity:1,scale: 1 }}
+          transition={{ duration: 1,delay:0.2 }}
         >
           Request Invite
         </Button>

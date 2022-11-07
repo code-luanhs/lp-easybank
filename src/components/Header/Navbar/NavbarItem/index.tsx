@@ -8,9 +8,9 @@ interface Props {
 export function NavbarItem(props: Props) {
   return (
     <NavItem
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+    initial={{ y:30, opacity: 0}}
+    animate={{ y:0,opacity:1}}
+    transition={{ duration: 1,delay:0.2 }}
     >
       <Link href={props.link}>{props.name}</Link>
     </NavItem>
