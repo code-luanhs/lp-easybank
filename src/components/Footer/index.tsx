@@ -46,7 +46,7 @@ function Footer() {
       opacity: 0,
     },
     onscreen: {
-      x: -50,
+      x: 0,
       rotate: 0,
       opacity: 1,
       transition: {
