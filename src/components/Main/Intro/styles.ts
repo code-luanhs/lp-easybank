@@ -65,7 +65,7 @@ export const Image = styled(motion.img)`
   @media (max-width: 770px) {
     top: -150px;
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(50%) !important;
     width: 100%;
     max-width: 425px;
   }

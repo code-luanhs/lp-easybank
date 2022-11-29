@@ -3,10 +3,21 @@ import { motion } from "framer-motion";
 
 import { THEME } from "../../util/theme";
 
+export const Overlay = styled.div`
+  &.active {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 15;
+    background-image: linear-gradient(to bottom, ${THEME.COLORS.DARK_BLUE}, transparent);
+  }
+`;
+
 export const Heading = styled.header`
   position: relative;
   background-color: ${THEME.COLORS.WHITE};
-  z-index: 10;
+  z-index: 20;
 `;
 
 export const Container = styled.div`

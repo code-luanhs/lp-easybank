@@ -1,6 +1,12 @@
 import { useState } from "react";
 
-import { Heading, Container, Button, ButtonNav } from "./styles";
+import {
+  Overlay,
+  Heading,
+  Container,
+  Button,
+  ButtonNav
+} from "./styles";
 
 import { motion } from "framer-motion";
 
@@ -14,35 +20,38 @@ export function Header() {
   const [menuActive, setMenuState] = useState(false);
 
   return (
-    <Heading>
-      <Container>
-        <motion.img
-          initial={{ opacity:0.7,scale: 0.3 }}
-          animate={{ opacity:1,scale: 1 }}
-          transition={{ duration: 1,delay:0.2 }}
-          src={logo}
-          alt="Logo"
-        />
-
-        <ButtonNav onClick={() => setMenuState(!menuActive)}>
-          <img
-            src={!menuActive ? iconMenu : iconCloseMenu}
-            alt="Menu"
-            loading="lazy"
+    <>
+      <Overlay className={menuActive ? "active" : ""}></Overlay>
+      <Heading>
+        <Container>
+          <motion.img
+            initial={{ opacity:0.7,scale: 0.3 }}
+            animate={{ opacity:1,scale: 1 }}
+            transition={{ duration: 1,delay:0.2 }}
+            src={logo}
+            alt="Logo"
           />
-        </ButtonNav>
 
-        <Navbar class={menuActive ? "active" : ""} />
+          <ButtonNav onClick={() => setMenuState(!menuActive)}>
+            <img
+              src={!menuActive ? iconMenu : iconCloseMenu}
+              alt="Menu"
+              loading="lazy"
+            />
+          </ButtonNav>
 
-        <Button
-          initial={{ opacity:0.7,scale: 0.3 }}
-          animate={{ opacity:1,scale: 1 }}
-          transition={{ duration: 1,delay:0.2 }}
-        >
-          Request Invite
-        </Button>
-      </Container>
-    </Heading>
+          <Navbar class={menuActive ? "active" : ""} />
+
+          <Button
+            initial={{ opacity:0.7,scale: 0.3 }}
+            animate={{ opacity:1,scale: 1 }}
+            transition={{ duration: 1,delay:0.2 }}
+          >
+            Request Invite
+          </Button>
+        </Container>
+      </Heading>
+    </>
   );
 }
 
